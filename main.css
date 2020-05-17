@@ -1,0 +1,741 @@
+/*@import "compass/css3";*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: solid 15px #f68872;
+}
+
+@media only screen and (max-width: 768px){
+  body{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: none;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    width:80%;
+    margin:auto;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    line-height: 80px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #2D3033;
+}
+
+.menu{
+     float: right;
+     display: inline;
+}
+
+#logo{
+    float: left;
+    font-size: 24px;
+    font-family: 'Yesteryear', cursive;
+    padding-left: 10px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, a:focus, a:active { 
+    color: #f68872;  
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+#hamburgMenu {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media only screen and (max-width: 768px) {
+  .topnav .menu a{display: none;}
+  #hamburgMenu {
+    float: right;
+    display: block;
+    font-size: 28px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media only screen and (max-width: 768px)  {
+  
+  #hamburgMenu {
+    position: absolute;
+    right: 10%;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    clear:both;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .menu{
+     float: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+   .topnav {
+    width:70%; 
+    }
+   
+}
+
+
+/* Footer*/
+
+.footer{
+    width:80%;
+    margin:auto;
+    border-top: 1px solid #dcdcdc;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    color:  #2D3033;
+    font-weight: 700;
+}
+
+.footer p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    color:  #5c5c5c;
+    font-weight: 300;
+    padding-top: 40px;
+}
+
+.footer span{
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer span a{
+  color:  #2D3033;
+}
+
+.footer span a:hover{ 
+    color: #f68872;  
+}
+
+/*float back-top buttom*/
+
+.back-top {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width:56px;
+  height:56px;
+  right: 50px;
+  bottom: 80px;
+  background-color:#f68872;
+  color:#ffffff;
+  border-radius:50px;
+  text-align: center; 
+  font-size:20px;
+  line-height: 56px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+
+/*Home Page Headline*/
+
+.homeTop{
+    width:60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.nameBox h1{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 42px;
+    font-weight:700;
+    color: #2D3033;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.txt-rotate{
+  color:#f68872;
+}
+
+.nameBox p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    font-weight: 300;
+    padding-top:20px;
+    padding-bottom: 30px;
+}
+
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.04em;
+  left:10px;
+  animation: blink 0.6s infinite;
+}
+
+@keyframes blink{
+   0%  {opacity: 1; }
+  50%  {opacity: .0; }
+    51%  {opacity: .0; }
+  100% {opacity: 1; }
+}
+
+@media only screen and (max-width: 767px){
+    .homeTop{
+    width:90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+  .homeTop{
+    width:80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 991px){
+  .homeTop{
+    width:52%;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 10px;
+   }
+}
+
+/*project cards*/
+
+.recentWork{
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.recentWork:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.thumbnail-grid{
+  margin:4px 0 0 0;
+  padding:0;
+  list-style: none;
+  display: block;
+  text-align:center;
+  width:100%;
+ 
+}
+
+.thumbnail-grid li{
+  width: 450px;
+  height:500px;
+  display:inline-block;
+  margin:15px;
+
+}
+
+@media only screen and (max-width: 767px){
+  .thumbnail-grid li{
+     width: 320px;
+     height:390px;
+     display:inline-block;
+     margin:15px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .thumbnail-grid li{
+     width: 320px;
+     height:390px;
+     display:inline-block;
+     margin:15px;
+    }
+
+}
+
+@media only screen and (min-width: 991px){
+  .thumbnail-grid li{
+  width: 450px;
+  height:500px;
+  display:inline-block;
+  margin:15px;
+   }
+
+}
+
+.card{
+background-color:#ffffff;
+box-shadow: 0 2px 44px 0 rgba(0,0,0,0.15);
+border-radius: 10px;
+width: 450px;
+height:480px;
+margin:auto;
+margin-top: 15px;
+position:relative;
+transition: margin-top ease 0.5s;
+}
+
+.card:hover{
+  box-shadow:  0px 4px 44px rgba(0,0,0,0.2);
+  margin-top: 0px;
+ }
+
+ @media only screen and (max-width: 767px){
+  .card{
+     width: 320px;
+     height:390px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .card{
+     width: 320px;
+     height:390px;
+    }
+
+}
+
+@media only screen and (min-width: 991px){
+  .card{
+  width: 450px;
+  height:480px;
+
+   }
+}
+
+@media only screen and (max-width: 767px){
+    .container{
+    text-align: left;
+    position: absolute;
+    top: 54%;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .container{
+      text-align: left;
+      position: absolute;
+      top: 54%;
+      margin-left: 36px;
+      margin-right: 36px;
+  }
+}
+
+@media only screen and (min-width: 991px){
+  .container{
+    text-align: left;
+    position: absolute;
+    top: 61%;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+    .container p{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    color:#f68872;
+   }
+
+  .container h4{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top:15px;
+    margin-bottom: 8px;
+    color:#2D3033;
+   }
+
+  .container h5{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 14px;
+    line-height:20px;
+    font-weight: 300;
+    margin-top:15px;
+    color:#333;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .container p{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    color:#f68872;
+   }
+
+  .container h4{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top:15px;
+    margin-bottom: 8px;
+    color:#2D3033;
+   }
+
+  .container h5{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 14px;
+    line-height:20px;
+    font-weight: 300;
+    margin-top:15px;
+    color:#333;
+  }
+}
+
+@media only screen and (min-width: 991px){
+  .container p{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color:#f68872;
+   }
+
+  .container h4{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top:20px;
+    margin-bottom: 8px;
+    color:#2D3033;
+   }
+
+  .container h5{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height:24px;
+    font-weight: 300;
+    margin-top:15px;
+    color:#333;
+  }
+}
+
+
+/*projetc title*/
+
+.project_title{
+   width:80%;
+   margin:auto;
+   text-align: center;
+}
+
+.project_title h1{
+    font-family:"Montserrat", sans-serif;
+    font-size: 32px;
+    line-height:42px;
+    font-weight: 700;
+    margin-top:60px;
+    margin-bottom:13px;
+    color:#2D3033;
+}
+
+.project_title h5{
+    font-family:"Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height:24px;
+    font-weight: 300;
+    margin-top:15px;
+    color:#333;
+}
+
+.heroImage{
+  text-align: center;
+  margin-top:30px;
+  margin-bottom: 30px;
+
+}
+
+.heroImage img{
+  width:80%;
+}
+
+.basicInfo{
+  width:78%;
+  max-width: 700px;
+  margin:auto;
+}
+
+.basicInfo p{
+  font-family:"Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height:24px;
+  font-weight: 700;
+  color:#2D3033;
+}
+
+.basicInfo span{
+  font-family:"Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height:24px;
+  font-weight: 300;
+  color:#333;
+}
+
+@media only screen and (max-width: 768px) {
+  .heroImage img{
+   width:90%;
+   }
+
+   .basicInfo{
+    width:88%;
+   }
+}
+
+/* Main Content */
+
+.section{
+  width:78%;
+  max-width: 700px;
+  margin:auto;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  /*border-top: 1px solid #dcdcdc;*/
+}
+
+@media only screen and (max-width: 768px) {
+  .section{
+    width:88%;
+   }
+}
+
+/*.sectionLine{
+   background-color: #f68872;
+   width:40px;
+   height:2px;
+   margin:auto;
+   margin-top: 10px;
+}*/
+
+.sectionTitle{
+  width:80%;
+  margin:auto;
+  border-top: 1px solid #dcdcdc;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  text-align: center;
+  font-family:"Montserrat", sans-serif;
+  font-size: 24px;
+  line-height:36px;
+  font-weight: 700;
+  color:#2D3033;
+}
+
+.section p{
+  font-family:"Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height:26px;
+  font-weight: 300;
+  color:#333;
+}
+
+.section h4{
+  font-family:"Montserrat", sans-serif;
+  font-size: 20px;
+  line-height:26px;
+  margin-top: 35px;
+  margin-bottom: 18px;
+  font-weight: 700;
+  color:#2D3033;
+}
+
+.section ul{
+  padding-left:20px;
+  margin-top: 10px;
+}
+
+.section li{
+  font-family:"Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height:26px;
+  margin-top: 13px;
+  font-weight: 300;
+  color:#333;
+}
+
+.underline{
+  color:#4072D5;
+  font-weight: 700;
+}
+
+
+mark{
+  color:#2D3033;
+  font-weight: 400;
+  position: relative;
+  background-color: transparent;
+  background-image: linear-gradient(to right, transparent 50%, #D6E8FA 50%);
+  background-repeat: repeat-x;
+  background-size: 200% 90%;
+  background-position:0% 10%;
+  transition: background-position 1s ease-out;
+}
+
+
+
+.section_2Columns{
+  width:82%;
+  margin:auto;
+  margin-bottom: 80px;
+  padding-top: 40px;
+}
+
+.section_2Columns:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.leftCln{
+  padding-left:15px;
+  padding-right:15px;
+  width:62%;
+  float: left;
+}
+
+.rightCln{
+  padding-left:15px;
+  padding-right:15px;
+  width:38%;
+  float: left;
+}
+
+
+.ImgContainer{
+  width:100%;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+
+.TxtContainer h5{
+  font-family:"Montserrat", sans-serif;
+  font-size: 20px;
+  line-height:26px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+  font-weight: 700;
+  color:#4072D5;
+}
+
+.TxtContainer p{
+  font-family:"Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height:26px;
+  margin-top: 13px;
+  font-weight: 300;
+  color:#333;
+  
+}
+
+@media only screen and (max-width: 767px){
+  .leftCln{
+  padding-left:15px;
+  padding-right:15px;
+  width:100%;
+  float: none;
+   }
+
+.rightCln{
+  padding-left:15px;
+  padding-right:15px;
+  width:100%;
+  float: none;
+   }
+
+  .section_2Columns{
+  width:90%;
+  margin:auto;
+  margin-bottom: 25px;
+  padding-top: 25px;
+   }
+ }
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .leftCln{
+  padding-left:15px;
+  padding-right:15px;
+  width:100%;
+  float: none;
+   }
+
+.rightCln{
+  padding-left:15px;
+  padding-right:15px;
+  width:100%;
+  float: none;
+   }
+
+   .section_2Columns{
+  width:80%;
+  margin:auto;
+  margin-bottom: 25px;
+  padding-top: 25px;
+   }
+
+}
+
+
