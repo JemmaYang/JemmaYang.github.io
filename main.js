@@ -120,4 +120,27 @@ function scrollAnchor(){
   });
 
 
+//navigation bar hightlight
+
+$('#menu li a').on('click', function(event) {
+    $(this).parent().find('a').removeClass('active');
+    $(this).addClass('active');
+});
+
+$(window).on('scroll', function() {
+    $( "#menu" ).css( "opacity", "0" );
+
+    $('.section').each(function() {
+
+        if($(window).scrollTop() >= $(this).position().top) {
+            $( "#menu" ).css( "opacity", "100%" );
+
+            var id = $(this).attr('id');
+            $('#menu li a').removeClass('active');
+            $('#menu li a[href=#'+ id +']').addClass('active');
+        
+        }
+        
+    });
+});
 
