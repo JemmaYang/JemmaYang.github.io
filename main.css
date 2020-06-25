@@ -23,6 +23,24 @@ a{
   text-decoration: none;
 }
 
+/* Page Loader */
+
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  background-image: url("image_cookie/spinner.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity:1;
+  visibility: visible;
+  transition: visibility 0.2s, opacity 0.2s linear;
+}
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -844,6 +862,59 @@ mark{
    .Img_Onecolumn img{
   width:80%;
   max-width: 700px;
+}
+}
+
+.Img_OnecolumnLarge{
+  text-align: center;
+  margin-top:40px;
+  margin-bottom: 40px;
+
+}
+
+.Img_OnecolumnLarge img{
+  width:80%;
+  max-width: 726px;
+}
+
+@media only screen and (max-width: 767px){
+  .Img_OnecolumnLarge img{
+  width:90%;
+  max-width: 726px;
+}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+   .Img_OnecolumnLarge img{
+  width:80%;
+  max-width: 726px;
+}
+}
+
+.Img_OnecolumnLargeMore{
+  text-align: center;
+  margin-top:20px;
+  margin-bottom: 40px;
+  background-color: #F5F4F2;
+
+}
+
+.Img_OnecolumnLargeMore img{
+  width:90%;
+  max-width: 950px;
+}
+
+@media only screen and (max-width: 767px){
+  .Img_OnecolumnLargeMore img{
+  width:90%;
+  max-width: 950px;
+}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+   .Img_OnecolumnLargeMore img{
+  width:90%;
+  max-width: 950px;
 }
 }
 

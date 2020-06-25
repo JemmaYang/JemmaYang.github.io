@@ -63,10 +63,12 @@
 
   <body>
 
+<!-- <div id="loading"></div>  -->
+
     	<div class="topnav" id="myTopnav">
            <a href="index.html" id="logo">Jemma Yang</a>
            <div class="menu">
-               <a href="#Work">PROJECTS</a>
+               <a href="index.html#Work">PROJECTS</a>
                <a href="resume.pdf" target="_blank">RESUME</a>
                <a href="#footer">CONTACT</a>
                <a href="javascript:void(0);" id="hamburgMenu" onclick="hamburgMenu()">&#9776;</a>
@@ -74,16 +76,16 @@
         </div>
 
     <!-- project title-->
-    <div class='project_title'>
+    <div class='project_title' data-aos="fade-up">
       <h1>Simplify Cookies Configuration </h1>
       <h5>Easily setup cookie notice that compliant with all major privacy regulations and frameworks</h5>
     </div>
 
-    <div class='heroImage'>
+    <div class='heroImage' data-aos="fade-up">
       <img src='image_cookie/Setup_Hero3.png'>
     </div>
 
-    <div class='basicInfo'>
+    <div class='basicInfo' data-aos="fade-up">
       <p>Team: <span>Product Manager, Customer Supports @ OneTrust</span></p>
       <p>Duration: <span>Nov 2019 - Dec 2019</span></p>
       <p>Key Words: <span>Enterprise UX, Desktop Design</span></p>
@@ -166,11 +168,11 @@
 
       <h4>Current User Flow</h4> 
       <p>To better understand what blocks users from achiving their goals, I audit the current design and found the gaps from the current user flow.</p>
-      <div class='Img_Onecolumn' ><img src="image_cookie/User_Flow.png"></div>
+      <div class='Img_OnecolumnLargeMore' ><img src="image_cookie/User_Flow.png"></div>
 
       <h4>Design Goals</h4> 
       <p>Based on the user needs and the gaps in existing products, I summarized the higher level goals that I hope to achieve with the redesign.</p>
-      <div class='Img_Onecolumn' ><img src="image_cookie/designgoals.png"></div>
+      <div class='Img_OnecolumnLarge' ><img src="image_cookie/designgoals.png"></div>
 
       <div class='Img_Onecolumn' ><img src="image_cookie/quota.png"></div>
 
@@ -184,9 +186,28 @@
       <h4>Proposed New User Flow</h4> 
       <p>The ideation starts with a high level user flowchart to collect feedbacks from stakeholders, including developers and produt managers, this has been working well for me to inform the team on my design processes and raise UX awareness for the whole team.</p>
 
-      <h4>User Feedback & Revised Design Goals</h4>
-      <p>All users liked the idea of having a centralized place to manage all configurations and keep the advanced settings the current locations. This was reassuring for us that the redesign brings value to users. We also received suggestions that add more to our design goals.</p>
-  
+      <div class='Img_OnecolumnLargeMore' ><img src="image_cookie/User_Flow02.png"></div>
+
+      <h4>User Feedbacks & Revised Design Goals</h4>
+      <p>All users liked the idea of having a centralized place to manage all configurations and keep the advanced settings at the current locations. This was reassuring for us that the redesign brings value to users. We also received suggestions that added more to our design goals.</p>
+
+      <div class='keyTakeaways'>Explain what’s included in a "Container"</div>
+      <p>It’s too overwhelming to ask users to make the decisions of container at very beginning, especiall for new users who are not familiar with the concept of container.</p>
+
+      <div class='keyTakeaways'>Add a Setup Wizard</div>
+      <p>Based on feedbacks, I created a refined user flow and added a setup wizard in order to educate new users on the concept of "Container". The new flow got greate feebacks from stakeholders.</p>
+
+      <div class='Img_OnecolumnLargeMore' ><img src="image_cookie/User_Flow03.png"></div>
+
+      <h4>Wireframes</h4>
+      <p>The plan was to have MVP designs ready for SUS and heuristics evaluations. So I decided to mainly focus on two parts: Setup wizard & Container. 
+      Further enhancements will be built upon the MVP. </p>
+
+      <h5 class='subTitle'><span class="underline--magical">Setup Wizard</span></h5>
+      <p>Guide new users and help exisiting users to launch a website quickly</p>
+
+      <h5 class='subTitle'><span class="underline--magical">Container</span></h5>
+      <p> Bring configurations together for enterprise users to bulk manage a huge number of websites</p>
 
     </div>
 
@@ -214,10 +235,14 @@
 
   </div>
 
+<!--Page End -->
+
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+
     </script>
 
   </body>
