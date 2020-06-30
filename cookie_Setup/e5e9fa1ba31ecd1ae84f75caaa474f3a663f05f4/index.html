@@ -35,6 +35,7 @@
   </head>
 
   <style>
+
     body {
       margin:0;
       padding-top: 15px;
@@ -63,21 +64,31 @@
        line-height: 27px;
       }
 
+
+    #menu .active{
+      color: #333;
+      font-weight: 700;
+      text-decoration: none;
+      border-left: 2px solid #68A840;
+      padding-left: 7px;
+}
+
+
+
   </style>
 
   <body>
 
-<!-- <div id="loading"></div>  -->
 
-    	<div class="topnav" id="myTopnav">
-           <a href="../../index.html" id="logo">Jemma Yang</a>
-           <div class="menu">
-               <a href="../../index.html#Work">PROJECTS</a>
-               <a href="../../resume.pdf" target="_blank">RESUME</a>
-               <a href="#footer">CONTACT</a>
-               <a href="javascript:void(0);" id="hamburgMenu" onclick="hamburgMenu()">&#9776;</a>
-            </div>
-        </div>
+  <div class="topnav" id="myTopnav">
+    <a href="../../index.html" id="logo">Jemma Yang</a>
+    <div class="menu">
+      <a href="../../index.html#Work">PROJECTS</a>
+      <a href="../../resume.pdf" target="_blank">RESUME</a>
+      <a href="#footer">CONTACT</a>
+      <a href="javascript:void(0);" id="hamburgMenu" onclick="hamburgMenu()">&#9776;</a>
+    </div>
+  </div>
 
     <!-- project title-->
     <div class='project_title' data-aos="fade-up">
@@ -86,11 +97,11 @@
     </div>
 
     <div class='heroImage' data-aos="fade-up">
-      <img src='image_cookie/Setup_Hero3.png'>
+      <img src='image_cookie/Setup_Hero3.png'/>
     </div>
 
     <div class='basicInfo' data-aos="fade-up">
-      <p>Team: <span>Product Manager, Customer Supports @ OneTrust</span></p>
+      <p>Team: <span>Product Manager, Tech Leads @ OneTrust</span></p>
       <p>Duration: <span>Nov 2019 - Dec 2019</span></p>
       <p>Key Words: <span>Enterprise UX, Desktop Design</span></p>
       <p>My Role: <span>UX Design, Usability Testing</span></p>
@@ -118,12 +129,12 @@
 
       <div class='section_2Columns'>
         <div class='leftCln'>
-          <img class='ImgContainer' src="image_cookie/wizard01.png">
+          <img class='ImgContainer' src="image_cookie/wizard.png">
         </div>
         <div class='rightCln'>
           <div class='TxtContainer'>
             <h5>Setup Wizard</h5>
-            <p>Click on the interactive map to select the destinations that you are interested in. Using the world map to encourage site visitors exploring and dreaming the vacation experiences.</p>
+            <p>Step by step guide users through the key steps of configurations. Use a live preview to give users real time feedbacks on their selections. </p>
           </div>
         </div>
       </div>
@@ -132,13 +143,15 @@
         <div class='rightCln'>
           <div class='TxtContainer'>
             <h5>Advanced Container</h5>
-            <p>Click on the interactive map to select the destinations that you are interested in. Using the world map to encourage site visitors exploring and dreaming the vacation experiences.</p>
+            <p>Bring all necessary configurations together for users to bulk manage a group of websites in one place. Allow users to override at website level as well.</p>
           </div>
         </div>
       <div class='leftCln'>
-          <img class='ImgContainer' src="image_cookie/container01.png">
+          <img class='ImgContainer' src="image_cookie/container.png">
       </div>
     </div>
+
+  </div>
 
     <!-- research-->
     <div class='section' id='research' data-aos="fade-up">
@@ -146,7 +159,7 @@
       <p>Even though I was given the prompt, I needed to break down the project space into achievable tasks and tackle them though a solid design process as well as rigorous collaboration.</p>
 
       <h4>Defining User Needs</h4> 
-      <p>At the outset of the project I didn't have a clear goal but abstarct ideas from product managers. To better understand users’ needs, I scheduled observation sessions as well as focus group discussions with clients of different sizes to answer the following questions.</p>
+      <p>At the outset of the project I didn't have a clear goal but abstarct ideas from product managers. To better understand users’ needs,<mark style="background-position:-100% 10%;"> I scheduled observation sessions as well as focus group discussions with clients of different sizes to answer the following questions.</mark></p>
 
       <h5 class='subTitle'><span class="underline--magical">Who & What roles are involved to setup cookie compliance?</span></h5>
       <div class='Img_Onecolumn' ><img src="image_cookie/persona.png"></div>
@@ -188,14 +201,14 @@
       <div class='sectionTitle'>Design</div>
       
       <h4>Proposed New User Flow</h4> 
-      <p>The ideation starts with a high level user flowchart to collect feedbacks from stakeholders, including developers and produt managers, this has been working well for me to inform the team on my design processes and raise UX awareness for the whole team.</p>
+      <p>The ideation starts with<mark style="background-position:-100% 10%;"> a high level user flowchart to collect feedbacks from stakeholders,</mark> including developers and produt managers, this has been working well for me to inform the team on my design processes and raise UX awareness for the whole team.</p>
 
-      <div class='Img_OnecolumnLargeMore' ><img src="image_cookie/User_Flow02.png"></div>
+      <div class='Img_OnecolumnLargeMore' ><img src="image_cookie/User_Flow04.png"></div>
 
       <h4>User Feedbacks & Revised Design Goals</h4>
-      <p>All users liked the idea of having a centralized place to manage all configurations and keep the advanced settings at the current locations. This was reassuring for us that the redesign brings value to users. We also received suggestions that added more to our design goals.</p>
+      <p><mark style="background-position:-100% 10%;">All users liked the idea of having a centralized place to manage all configurations</mark> and keep the advanced settings at the current locations. This was reassuring for us that the redesign brings value to users. We also received suggestions that added more to our design goals.</p>
 
-      <div class='keyTakeaways'>- Explain what’s included in a "Container"</div>
+      <div class='keyTakeaways'>- Explain the concept of "Container" at very beginning</div>
       <p>It’s too overwhelming to ask users to make the decisions of container at very beginning, especiall for new users who are not familiar with the concept of container.</p>
 
       <div class='keyTakeaways'>- Add a Setup Wizard</div>
@@ -204,11 +217,11 @@
       <div class='Img_OnecolumnLargeMore' ><img src="image_cookie/User_Flow03.png"></div>
 
       <h4>Wireframes</h4>
-      <p>The plan was to have MVP designs ready for SUS and heuristics evaluations. So I decided to mainly focus on two parts: Setup wizard & Container. 
+      <p>The plan was to have MVP designs ready for collecting clients' feedbacks. So I decided to mainly focus on two parts: Setup wizard & Container. 
       Further enhancements will be built upon the MVP. </p>
 
       <h5 class='subTitle'><span class="underline--magical">Setup Wizard</span></h5>
-      <p>Guide new users and help exisiting users to launch a website quickly</p>
+      <p>Guide new users through essential steps and help exisiting users to launch a website quickly</p>
       <div class='Img_OnecolumnLargeMore' ><img src="image_cookie/wizard_wireframe.png"></div>
       <div class='keyTakeaways'>Gather Feedbacks</div>
       <ul>
@@ -218,9 +231,9 @@
       </ul>
 
       <h5 class='subTitle'><span class="underline--magical">Container</span></h5>
-      <p> Bring configurations together for enterprise users to bulk manage a huge number of websites</p>
+      <p> Bring configurations together for users to bulk manage a huge number of websites</p>
       <div class='Img_OnecolumnLargeMore'><img src="image_cookie/container_wireframe.png"></div>
-      <p>However, I got feedbacks that the design is inconsistent with the user habits. </p>
+      <p>However, I got feedbacks that<mark style="background-position:-100% 10%;"> the design is inconsistent with the user habits. </mark></p>
         <ul>
         <li>Customers doesn’t think the way of building a container first then override at website level. They want to set up a website first, then think about how to take all configurations to other websites.</li>
         <li>We should design for the scope of 2-10 conditions.</li>
@@ -235,32 +248,38 @@
 
       <h5 class='subTitle'><span class="underline--magical">Setup Wizard</span></h5>
       <ul>
-        <li>Enhance the search and navigation functionality of the landing page.</li>
-        <li>Make the path to purchase easier for the customer.</li>
+        <li>Moved the progress bar to the top, and make the preview more useful.</li>
+        <li>Asked users the right questions to find the best solutions.</li>
+        <li>Added the preview on the Overview page to give users a clear view of what they just setup.</li>
       </ul>
 
       <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 2 }'>
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/02_Container_02.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/02_Container_03.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/02_Container_04.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/02_Container_05.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/04_WebsiteV2_02.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/04_WebsiteV2_03.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/01_Wizard_02.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/01_Wizard_03.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/01_Wizard_04.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/01_Wizard_05.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/01_Wizard_06.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/01_Wizard_07.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/01_Wizard_08.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/01_Wizard_09.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/01_Wizard_10.png" />
       </div>
 
       <h5 class='subTitle'><span class="underline--magical">Container</span></h5>
       <ul>
-        <li>Enhance the search and navigation functionality of the landing page.</li>
-        <li>Make the path to purchase easier for the customer.</li>
+        <li>Allow users to preview for each website to make sure everything is ready to go live.</li>
+        <li>The left & right sidebars are similar to many editing tools on the market.</li>
+        <li>Convenient for bulk actions as well as website level overrides.</li>
       </ul>
 
       <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 2 }'>
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/02_Container_02.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/02_Container_03.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/02_Container_04.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/02_Container_05.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/04_WebsiteV2_02.png" />
-        <img class="carousel-image" data-flickity-lazyload="image_cookie/04_WebsiteV2_03.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/03_Override_03.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/03_Override_04.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/03_Override_05.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/03_Override_06.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/03_Override_07.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/03_Override_09.png" />
+        <img class="carousel-image" data-flickity-lazyload="image_cookie/03_Override_10.png" />
       </div>
 
 
@@ -271,9 +290,35 @@
   <div class='section' id='evaluation' data-aos="fade-up">
       <div class='sectionTitle'>Evaluation</div>
 
+      <p>Through several review sessions with clients, we received positive feedbacks for the design solutions. There were also suggestions that we can make the whole process more transparent and understandable. And at the end of the wizard, we can make the transition to advanced container smoother.</p>
 
+      <div class='keyTakeaways'>Enhancement #1: Use a loading animation to inform users what’s happening in the backend</div>
+       <div class='small_Img'><img src="image_cookie/01_Wizard_20.png" style="box-shadow: 0 0 20px rgba(0,0,0,.10);"></div>
+
+      <div class='keyTakeaways'>Enhancement #2: Prompt users for the next step. And allow users to share with their privacy team for review. </div>
+       <div class='small_Img'><img src="image_cookie/01_Wizard_19.png" style="box-shadow: 0 0 20px rgba(0,0,0,.10);"></div>
+
+      <h4>Reflections</h4>
+      <p>This is a problem that I've been wishing to solve for a long time. Since I noticed that we have been focused on individule features too much and lost the big picture of the overall workflow. Through multiple iterations, we have arrived at a good solution for now. Two lessons I learnt from it are: </p>
+
+      <div class='keyTakeaways'>Ask for feedbacks but don't let users to make design decisions.</div>
+      <p>We received feedbacks from different stakeholders, like clients, sales teams, customer support teams. All this information allows me to understand the pains and frustrations users experience as they use our product and see problems I might have otherwise missed. However, I can't just take the feedbacks and design a solution based on what users said. I need to dig deeper to figure out users' problem and interprate to design solutions.</p>
+
+      <div class='keyTakeaways'>Define design scope at earlt stage</div>
+      <p>We had a high expectation about this project before started, however it exposed to tons of limitations during the design process. Reasonably planning the design scope of each stage will save time, energy and eliminate distractions. It will also involve developers in the design precess at an early stage to make sure the design is feasible.</p>
 
   </div>
+
+
+   <!--Navigation -->
+
+ <ul id="menu" style="opacity:0;">
+   <li><a href="#overview"> Overview</a></li>
+   <li><a href="#outcomes"> Outcomes</a></li>
+   <li><a href="#research"> Research</a></li>
+   <li><a href="#design"> Design</a></li>
+   <li><a href="#evaluation"> Evaluation</a></li>
+ </ul>
 
   <!-- Footer -->
   <div class="footer" id="footer"> 

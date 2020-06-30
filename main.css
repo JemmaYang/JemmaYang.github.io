@@ -1005,7 +1005,7 @@ mark{
     width:80%;
     margin:auto;
     margin-top: 40px;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
    }
 
    .keyTakeaways{
@@ -1103,6 +1103,7 @@ mark{
   margin:auto;
   margin-top: 20px;
   margin-bottom: 80px;
+  box-shadow: 0 0 20px rgba(0,0,0,.10);
 }
 
 
@@ -1111,7 +1112,7 @@ mark{
    /* height: 400px;*/
   /* set min-width,
      allow images to determine cell width */
-  width:90%;
+  width:100%;
   min-width: 150px;
    /* max-width: 100%;*/
   margin-right: 40px;
