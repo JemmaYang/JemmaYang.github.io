@@ -144,5 +144,19 @@ $(window).on('scroll', function() {
     });
 });
 
+//test lightbox
+$('.myLightbox').magnificPopup({
+    type: 'image',
+    closeBtnInside: false,
+    closeOnContentClick: true,
 
+  
+    image: {
+      verticalFit: true,
+      titleSrc: function(item) {
+        return item.el.attr('title') ;
+      }
+    }
+  
+  });
 
