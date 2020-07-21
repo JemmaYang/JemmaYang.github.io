@@ -732,6 +732,19 @@ mark{
   transition: background-position 1s ease-out;
 }
 
+.section_2ColumnsSmall{
+  width:80%;
+  max-width: 730px;
+  margin:auto;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+
+.section_2ColumnsSmall:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .section_2Columns{
   width:80%;
@@ -812,6 +825,13 @@ mark{
   margin-bottom: 20px;
   padding-top: 20px;
    }
+
+  .section_2ColumnsSmall{
+  width:95%;
+  margin:auto;
+  margin-bottom: 20px;
+  padding-top: 20px;
+   }
  }
 
 @media only screen and (max-width: 991px) and (min-width: 768px){
@@ -836,6 +856,60 @@ mark{
   padding-top: 20px;
    }
 
+  .section_2ColumnsSmall{
+  width:83%;
+  margin:auto;
+  margin-bottom: 20px;
+  padding-top: 20px;
+   }
+
+}
+
+.leftClnMobile{
+  padding-left:15px;
+  padding-right:15px;
+  width:38%;
+  float: left;
+}
+
+.rightClnMobile{
+  padding-left:35px;
+  padding-right:35px;
+  width:62%;
+  float: left;
+}
+
+@media only screen and (max-width: 767px){
+  .leftClnMobile{
+  padding-left:15px;
+  padding-right:15px;
+  width:60%;
+  margin: auto;
+  float: none;
+   }
+
+.rightClnMobile{
+  padding-left:15px;
+  padding-right:15px;
+  width:100%;
+  float: none;
+   }
+ }
+
+ @media only screen and (max-width: 991px) and (min-width: 768px){
+    .leftClnMobile{
+  padding-left:15px;
+  padding-right:15px;
+  width:45%;
+
+   }
+
+  .rightClnMobile{
+    padding-left:15px;
+    padding-right:15px;
+    width:55%;
+
+   }
 }
 
 .Img_Onecolumn{
@@ -906,7 +980,7 @@ mark{
 
 @media only screen and (max-width: 767px){
   .Img_OnecolumnLargeMore img{
-  width:90%;
+  width:100%;
   max-width: 960px;
 }
 }
@@ -1079,7 +1153,7 @@ mark{
   padding: 35px;
   font-weight: 600;
   color:#2D3033;
-  background-color: #f8f8f8;
+  background-color: #FDF4E4;
 }
 
 /* cookie setup */
